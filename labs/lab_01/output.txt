@@ -1,16 +1,0 @@
-Script started on Sun Nov  6 21:21:59 2022
-[1m[7m%[27m[1m[0m                                                                                                       ]7;file://hector/Users/hector/repos/cs_211/labs/lab_01[0m[27m[24m[Jhector@hector lab_01 % [K[?2004hgit push origin main[16Dcommit -m 'Edit style.css to practice margin and padding'[57Dstatus                                                   [51Dadd . [9Dls       code .,clear ls   cd 02-margin-and-padding-2[26Dls                        [24Dcd ..ls   git push origin main[16Dcommit -m 'Edit style.css to practice margin and padding'[57Dpush origin main                                         [41D[20Dls                  [18Dcd ..ls   cd 02-margin-and-padding-2[26Dls                        [24Dclearcode ,.ls    git add .statuscommit -m 'Edit style.css to practice margin and padding'[57Dpush origin main                                         [41D[20D                    [20Dgit push origin main[16Dcommit -m 'Edit style.css to practice margin and padding'[57Dstatus                                                   [51Dcommit -m 'Edit style.css to practice margin and padding'[57Dpush origin main                                         [41D[20D                    [20Dgg++ lab_01.cpp[?2004l
-[1m[7m%[27m[1m[0m                                                                                                       ]7;file://hector/Users/hector/repos/cs_211/labs/lab_01[0m[27m[24m[Jhector@hector lab_01 % [K[?2004h../a, .out[?2004l
-Normal Program Book Perfect Total 
-Error: Insert not possible. Index beyond size of vector.
-Error: Delete not possible. Index beyond size of vector.
-Normal Book Money Total 
-[1m[7m%[27m[1m[0m                                                                                                       ]7;file://hector/Users/hector/repos/cs_211/labs/lab_01[0m[27m[24m[Jhector@hector lab_01 % [K[?2004heexit[?2004l
-
-Saving session...
-...copying shared history...
-...saving history...truncating history files...
-...completed.
-Deleting expired sessions...      15 completed.
-
-Script done on Sun Nov  6 21:22:33 2022
