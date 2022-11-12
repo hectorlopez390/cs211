@@ -16,28 +16,28 @@ int main()
 
   fin.open("transaction_file.txt");
 
-  fin >> command;
+  fin >> command; //read in first command
   
-  while(!fin.eof())
+  while(!fin.eof())  //while transaction file contains text
     {
-      if (command == "Insert")
+      if (command == "Insert") //if command is insert, read two more info
 	{
 	  fin >> word >> index;
 
-	  if (index == 0 || index < V.size())
+	  if (index == 0 || index < V.size()) //if index within vector bounds
 	    {
-	      V.insert(V.begin()+index, word);
+	      V.insert(V.begin()+index, word); 
 	    }
 	  else
 	    {
 	      cout << "Error: Insert not possible. Index beyond size of vector." << endl;
 	    }
 	}
-      else if (command == "Delete")
+      else if (command == "Delete") //if command is delete, read index number
 	{
 	  fin >> index;
 
-	  if (index < V.size())
+	  if (index < V.size()) 
 	    {
 	      V.erase(V.begin()+index);
 	    }
@@ -54,7 +54,7 @@ int main()
 	    }
 	  cout << endl;
 	}
-      fin >> command;
+      fin >> command; //read in next command 
     }
   
   return 0;
