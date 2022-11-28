@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+class Course
+{
+public:
+  long CourseNum;
+  string CourseName;
+};
+
+class Student
+{
+public:
+  long StNo;
+  Course Course1;
+  Course Course2;
+  Course Course3;
+};
+
+class Person
+{
+public:
+  long SSN;
+  string Fname;
+  string Lname;
+  int Age;
+  char Gender;
+};
+
+class StudentProfile
+{
+public:
+  Person PersonalInfo;
+  Student StdInfo;
+};
+
+class StudentCollection
+{
+public:
+  vector<StudentProfile> CS211;
+};
+
+int main()
+{
+
+  return 0;
+}
