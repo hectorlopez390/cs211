@@ -1,4 +1,6 @@
 #include <iostream>
+#include <fstream>
+#include <vector>
 using namespace std;
 
 class Course
@@ -42,6 +44,23 @@ public:
 
 int main()
 {
+  
+  StudentCollection collection;
 
+  StudentProfile new_entry;
+
+  fstream fin;
+  
+  fin.open("data.txt");
+  
+  /* test output
+
+     fin >> new_entry.PersonalInfo.SSN;
+     
+     collection.CS211.push_back(new_entry);
+
+     cout << collection.CS211[0].PersonalInfo.SSN << endl;
+
+  */
   return 0;
 }
