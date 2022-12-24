@@ -61,7 +61,7 @@ int main()
 
      cout << collection.CS211[0].PersonalInfo.SSN << endl;
   */
-
+  
   fin >> new_entry.PersonalInfo.SSN;
   fin >> new_entry.PersonalInfo.Fname;
   fin >> new_entry.PersonalInfo.Lname;
@@ -75,10 +75,13 @@ int main()
   fin >> new_entry.StdInfo.Course3.CourseNum;
   fin >> new_entry.StdInfo.Course3.CourseName;
 
-  collection.CS211.push_back(new_entry);
- 
+  //  collection.CS211.push_back(new_entry);
+  //  cout << "New student added successfully." << endl;
+
+  
   while(!fin.eof())
     {
+      collection.CS211.push_back(new_entry);
       fin >> new_entry.PersonalInfo.SSN;
       fin >> new_entry.PersonalInfo.Fname;
       fin >> new_entry.PersonalInfo.Lname;
@@ -92,7 +95,7 @@ int main()
       fin >> new_entry.StdInfo.Course3.CourseNum;
       fin >> new_entry.StdInfo.Course3.CourseName;
       
-      collection.CS211.push_back(new_entry);
+      //  collection.CS211.push_back(new_entry);
 
       cout << "New student added successfully." << endl;
     }
