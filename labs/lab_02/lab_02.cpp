@@ -81,7 +81,8 @@ int main()
   
   while(!fin.eof())
     {
-      collection.CS211.push_back(new_entry);
+      collection.CS211.push_back(new_entry); //add new_entry to CS211 vector
+      
       fin >> new_entry.PersonalInfo.SSN;
       fin >> new_entry.PersonalInfo.Fname;
       fin >> new_entry.PersonalInfo.Lname;
