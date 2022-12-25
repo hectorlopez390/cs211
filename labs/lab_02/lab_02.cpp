@@ -74,10 +74,6 @@ int main()
   fin >> new_entry.StdInfo.Course2.CourseName;
   fin >> new_entry.StdInfo.Course3.CourseNum;
   fin >> new_entry.StdInfo.Course3.CourseName;
-
-  //  collection.CS211.push_back(new_entry);
-  //  cout << "New student added successfully." << endl;
-
   
   while(!fin.eof())
     {
@@ -101,13 +97,26 @@ int main()
       cout << "New student added successfully." << endl;
     }
 
-  cout << "Printing student collection..." << endl;
-
+  cout << "Printing student collection..." << endl << endl;
+  
   for(int i = 0; i < collection.CS211.size(); i++)
     {
+      cout << "SSN: " << collection.CS211[i].PersonalInfo.SSN << endl;
+      cout << "First Name: " << collection.CS211[i].PersonalInfo.Fname << endl;
+      cout << "Last Name: " << collection.CS211[i].PersonalInfo.Lname << endl;
+      cout << "Age: " << collection.CS211[i].PersonalInfo.Age << endl;
+      cout << "Gender: " << collection.CS211[i].PersonalInfo.Gender << endl;
+      cout << "Student Number: " << collection.CS211[i].StdInfo.StNo << endl;
+      cout << "Course 1 Number: " << collection.CS211[i].StdInfo.Course1.CourseNum << endl;
+      cout << "Course 1 Name: " << collection.CS211[i].StdInfo.Course1.CourseName << endl;
+      cout << "Course 2 Number: " << collection.CS211[i].StdInfo.Course2.CourseNum << endl;
+      cout << "Course 2 Name: " << collection.CS211[i].StdInfo.Course2.CourseName << endl;
+      cout << "Course 3 Number: " << collection.CS211[i].StdInfo.Course3.CourseNum << endl;
+      cout << "Course 3 Name: " << collection.CS211[i].StdInfo.Course3.CourseName << endl;
 
-      cout << collection.CS211[i].PersonalInfo.SSN << endl;
+      cout << endl;
     }
+  cout << "Student collection successfully printed." << endl << endl;
   
   return 0;
 }
