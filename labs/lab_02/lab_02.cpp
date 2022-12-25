@@ -92,8 +92,6 @@ int main()
       fin >> new_entry.StdInfo.Course3.CourseNum;
       fin >> new_entry.StdInfo.Course3.CourseName;
       
-      //  collection.CS211.push_back(new_entry);
-
       cout << "New student added successfully." << endl;
     }
 
