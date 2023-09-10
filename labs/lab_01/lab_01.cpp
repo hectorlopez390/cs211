@@ -26,7 +26,7 @@ int main()
 
 	  if (index == 0 || index < V.size()) //if index within vector bounds
 	    {
-	      V.insert(V.begin()+index, word); 
+	      V.insert(V.begin()+index, word); //insert word in vector
 	    }
 	  else
 	    {
@@ -37,18 +37,18 @@ int main()
 	{
 	  fin >> index;
 
-	  if (index < V.size()) 
+	  if (index < V.size())  //if index within vector bounds
 	    {
 	      V.erase(V.begin()+index);
 	    }
 	  else
 	    {
-	      cout << "Error: Delete not possible. Index beyond size of vector." << endl;
+	      cout << "Error: Delete not possible. Index not within vector bounds." << endl;
 	    }
 	}
       else if (command == "Print")
 	{
-	  for(int i = 0; i < V.size(); i++)
+	  for(int i = 0; i < V.size(); i++) //print vector V
 	    {
 	      cout << V[i] << " ";
 	    }
