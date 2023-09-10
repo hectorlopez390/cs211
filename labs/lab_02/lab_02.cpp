@@ -61,7 +61,8 @@ int main()
 
      cout << collection.CS211[0].PersonalInfo.SSN << endl;
   */
-  
+
+  //read information of first student into new_entry object
   fin >> new_entry.PersonalInfo.SSN;
   fin >> new_entry.PersonalInfo.Fname;
   fin >> new_entry.PersonalInfo.Lname;
@@ -74,11 +75,14 @@ int main()
   fin >> new_entry.StdInfo.Course2.CourseName;
   fin >> new_entry.StdInfo.Course3.CourseNum;
   fin >> new_entry.StdInfo.Course3.CourseName;
-  
+
+  //read information of remaining students 
   while(!fin.eof())
     {
       collection.CS211.push_back(new_entry); //add new_entry to CS211 vector
+      cout << "New student added successfully." << endl;
       
+      //read information of next student in file
       fin >> new_entry.PersonalInfo.SSN;
       fin >> new_entry.PersonalInfo.Fname;
       fin >> new_entry.PersonalInfo.Lname;
@@ -92,7 +96,6 @@ int main()
       fin >> new_entry.StdInfo.Course3.CourseNum;
       fin >> new_entry.StdInfo.Course3.CourseName;
       
-      cout << "New student added successfully." << endl;
     }
 
   cout << "Printing student collection..." << endl << endl;
