@@ -39,7 +39,7 @@ int main()
 
 	  if (index < V.size())  //if index within vector bounds
 	    {
-	      V.erase(V.begin()+index);
+	      V.erase(V.begin()+index); //erase word in vector at index
 	    }
 	  else
 	    {
